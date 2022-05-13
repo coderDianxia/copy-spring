@@ -15,10 +15,15 @@ public class UserDao {
 
     private static Map<String, String>  userInfo =  new HashMap<>();
 
-    static {
+
+    public void initMethod(){
         userInfo.put("1","张三");
         userInfo.put("2","李四");
         userInfo.put("3","王五");
+    }
+
+    public void destroyMethod() {
+        System.out.println("UserDao.destroyMethod======== ");
     }
 
     public String queryUserName(String id){
