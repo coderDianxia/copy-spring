@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+    <bean id="userDao" class="com.coderdianxia.spring.service.UserDao" init-method="initDataMethod" destroy-method="destroyDataMethod">
+    </bean>
+
+    <bean id="userService" class="com.coderdianxia.spring.service.UserService">
+        <property name="id" value="1"/>
+        <property name="name" value="张三"/>
+        <property name="sex" value="女"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="customBeanPostProcessor" class="com.coderdianxia.spring.service.CustomBeanPostProcessor"></bean>
+    <bean id="customFactoryPostProcessor" class="com.coderdianxia.spring.service.CustomFactoryPostProcessor"></bean>
+</beans>
