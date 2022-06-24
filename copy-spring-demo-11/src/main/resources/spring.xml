@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+<!--    <bean id="userDaoFactoryBean" class="com.coderdianxia.spring.service.UserDaoFactoryBean" scope="prototype">-->
+<!--    </bean>-->
+
+<!--    <bean id="userService" scope="prototype" class="com.coderdianxia.spring.service.UserService">-->
+<!--        <property name="id" value="1"/>-->
+<!--        <property name="name" value="张三"/>-->
+<!--        <property name="sex" value="女"/>-->
+<!--        <property name="userDao" ref="userDaoFactoryBean"/>-->
+<!--    </bean>-->
+    <bean id="customEvent" class="com.coderdianxia.spring.service.CustomApplicationListerner"></bean>
+
+
+<!--    <bean id="customBeanPostProcessor" class="com.coderdianxia.spring.service.CustomBeanPostProcessor"></bean>-->
+<!--    <bean id="customFactoryPostProcessor" class="com.coderdianxia.spring.service.CustomFactoryPostProcessor"></bean>-->
+</beans>
